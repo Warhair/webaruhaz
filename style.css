@@ -11,38 +11,125 @@ main{
     grid-template-areas: 
     "h h "
     "n n"
-    "a s"
+    "a as"
     "f f";
     
+}
+.arak{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 10px;
+    text-align: center;
 }
 
 article{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-area: a;
+    grid-template-rows: 200px;
+    background-color: #2196F3;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    column-gap: 20px;
+    row-gap: 20px;
 }
 aside{
     grid-area: as;
-    
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: aquamarine;
 }
 footer{
     grid-area: f;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: red;
 }
 nav{
     grid-area: n;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    text-align: center;
 }
 header{
     grid-area: h;
     width: 100%;
 	padding-bottom: 25px;
 	flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: red;
+    color: wheat;
 }
 footer{
     grid-area: h;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    color: wheat;
+    text-align: center;
 }
 h1{
     text-align: center;
 }
-img {
-	width: 250px;
-}   
+img{
+    width: 100%;
+}
+.kep{
+    height: 125px;
+    overflow: hidden;
+    }
+span{
+    float: right;
+    font-size: large;
+}
+.kosar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5px;
+    font-size: 15px;
+}
+h3{
+    text-align: center;
+}
+a:link {
+    color: rgb(89, 0, 255);
+  }
+  
+
+  a:visited {
+    color: green;
+  }
+ 
+  a:hover {
+    color: hotpink;
+  }
+
+  a:active {
+    color: blue;
+  }
+  @media only screen and (max-width: 700px){
+    article{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0px;
+        row-gap: 0px;
+  }
+}
+@media only screen and (max-width: 400px){
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+        row-gap: 0px;
+  }
+  main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "h"
+    "n"
+    "a"
+    "as"
+    "f";
+  }
+  nav{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}
