@@ -123,8 +123,8 @@ a:link {
     grid-template-areas: 
     "h"
     "n"
-    "a"
     "as"
+    "a"
     "f";
   }
   nav{
